@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+
+        <item
+                android:id="@+id/portfolio_menu"
+                android:title="@string/portfolio"
+                android:icon="@drawable/portfolio"
+                />
+        <item
+                android:id="@+id/manage_menu"
+                android:title="@string/manage_coins"
+                android:icon="@drawable/wallet"/>
+        <item
+                android:id="@+id/fees_menu"
+                android:title="Fees"
+                android:icon="@drawable/transaction"/>
+        <item
+                android:id="@+id/news_menu"
+                android:title="News"
+                android:icon="@drawable/news"/>
+        <item
+                android:id="@+id/aler_menu"
+                android:title="Alerts"
+                android:icon="@drawable/alerts"/>
+        <item
+                android:id="@+id/settings_menu"
+                android:title="Settings"
+                android:icon="@drawable/settings"/>
+
+    </group>
+</menu>

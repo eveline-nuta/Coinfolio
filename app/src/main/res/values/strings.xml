@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">BitcoinTracker</string>
+    <string-array name="currencies">
+        <item>USD</item>
+        <item>EUR</item>
+        <item>GBP</item>
+        <item>KRW</item>
+        <item>JPY</item>
+        <item>CNY</item>
+        <item>INR</item>
+    </string-array>
+    <string-array name="cryptoCurrencies">
+        <item>BTC</item>
+        <item>ETH</item>
+        <item>LTC</item>
+        <item>XRP</item>
+    </string-array>
+    <string name="portfolio">Portfolio</string>
+    <string name="pie_chart">Value Distribution</string>
+    <string name="manage_coins">Manage Coins</string>
+    <string name="buy">Buy</string>
+    <string name="sell">Sell</string>
+    <string name="coinBaseUrl">http://www.coinbase.com</string>
+    <string name="bitBayUrl">http://bitbay.net</string>
+    <string name="binanceUrl">http://binance.com</string>
+    <string name="gdaxUrl">http://www.gdax.com/</string>
+    <integer name="bitcoin_price">9948</integer>
+    <integer name="litecoin_price">174</integer>
+    <integer name="ethereum_price">815</integer>
+    <integer name="abc_price">270</integer>
+    <string-array name="coinMarkets">
+        <item>Coinbase</item>
+        <item>Bitbay</item>
+        <item>Binance</item>
+        <item>GDAX</item>
+    </string-array>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+</resources>

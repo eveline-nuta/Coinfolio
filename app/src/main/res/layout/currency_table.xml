@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="70px"
+        android:layout_height="70px"
+        android:layout_marginLeft="4px"
+        android:layout_marginRight="50px"
+        android:layout_marginTop="4px"
+        android:src="@drawable/trash_btn"
+        android:onClick="onDeleteButtonClick">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/coin_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@+id/label"
+        android:textSize="70px"
+        android:layout_marginLeft="4px"
+        android:layout_marginRight="100px"
+        android:layout_marginTop="4px">
+    </TextView>
+
+    <TextView
+        android:id="@+id/coin_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@+id/label"
+        android:textSize="70px"
+        android:layout_marginLeft="4px"
+        android:layout_marginRight="0px"
+        android:layout_marginTop="4px">
+    </TextView>
+
+</LinearLayout>
