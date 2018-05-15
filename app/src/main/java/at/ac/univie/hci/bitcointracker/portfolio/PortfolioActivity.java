@@ -30,34 +30,41 @@ public class PortfolioActivity extends FragmentActivity {
         }
 
         Intent intent = getIntent();
-        String fragmentToStart = intent.getExtras() != null ? intent.getExtras().getString("FragmentToOpen") : "start_fragment";
+        if(intent.hasExtra("FragmentToOpen")) {
+            String fragmentToStart = intent.getExtras().getString("FragmentToOpen");
+            switch (fragmentToStart) {
+                case "start_fragment":
 
-        switch (fragmentToStart) {
-            case "start_fragment":
-
-                getSupportFragmentManager()
-                        .beginTransaction()
-                        .add(R.id.container_portfolio, new ChartPriceFragment())
-                        .add(R.id.container_portfolio, new CoinPriceFragment())
-                        .commit();
-                break;
-            case "manage_fragment":
+                    getSupportFragmentManager()
+                            .beginTransaction()
+                            .add(R.id.container_portfolio, new ChartPriceFragment())
+                            .add(R.id.container_portfolio, new CoinPriceFragment())
+                            .commit();
+                    break;
+                case "manage_fragment":
 //                getActionBar().setTitle("Manage Coins");
-                getSupportFragmentManager()
-                        .beginTransaction()
-                        .add(R.id.container_portfolio, new ManagePortfolioCoinsFragment())
+                    getSupportFragmentManager()
+                            .beginTransaction()
+                            .add(R.id.container_portfolio, new ManagePortfolioCoinsFragment())
 //                    .add(R.id.container_portfolio, new CoinPriceFragment())
-                        .commit();
-                break;
-            case "fee_fragment":
+                            .commit();
+                    break;
+                case "fee_fragment":
 //                getActionBar().setTitle("Fees");
-                getSupportFragmentManager()
-                        .beginTransaction()
-                        .add(R.id.container_portfolio, new FeesFragment())
-                        .commit();
-                break;
+                    getSupportFragmentManager()
+                            .beginTransaction()
+                            .add(R.id.container_portfolio, new FeesFragment())
+                            .commit();
+                    break;
+            }
         }
-
+        else {
+            getSupportFragmentManager()
+                    .beginTransaction()
+                    .add(R.id.container_portfolio, new ChartPriceFragment())
+                    .add(R.id.container_portfolio, new CoinPriceFragment())
+                    .commit();
+        }
     }
 
 }
