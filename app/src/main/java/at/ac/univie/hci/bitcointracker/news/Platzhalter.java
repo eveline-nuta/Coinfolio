@@ -4,7 +4,7 @@ import android.graphics.Rect;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
-//Platzhalter für bessere übersicht
+//Platzhalter für bessere übersichtlichkeit zwischen einträgen
 public class Platzhalter extends RecyclerView.ItemDecoration{
 
     int Space;
