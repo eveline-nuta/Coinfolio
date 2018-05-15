@@ -101,6 +101,10 @@ public class AlertActivity extends Activity
         list = buildData();
         SimpleAdapter adapter1 = new SimpleAdapter(this,list,
                 R.layout.currency_table, from, to);
+                list.add(putData("BTC", "9756" + " USD"));
+                list.add(putData("ETH", "736 " + "USD"));
+                list.add(putData("LTC", "178 " + "USD"));
+
 
         listview.setAdapter(adapter1);
 
