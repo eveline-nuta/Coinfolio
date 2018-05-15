@@ -16,6 +16,12 @@ import at.ac.univie.hci.bitcointracker.R;
 import at.ac.univie.hci.bitcointracker.news.NewsActivity;
 import at.ac.univie.hci.bitcointracker.portfolio.PortfolioActivity;
 
+/**
+ * AlertActivity has the role of supporting the creation of alerts for the user
+ * for different cryptocurrencies expressed in fiat currencies
+ * It is working is the alerts layout and the currency table layout
+ * author: Debora Nuta
+ */
 public class AlertActivity extends Activity
 {
     public Integer position = 0;

@@ -21,10 +21,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.033"
-
         android:textColor="#00796b"
-
-        android:fontFamily="Roboto"
+        android:textStyle="bold"
 
         />
 
@@ -37,7 +35,6 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="Night mode"
-        android:textColor="#00796b"
         android:textStyle="bold"
         android:textSize="20dp"
         android:fontFamily="Roboto"
@@ -73,7 +70,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="Notifications"
-        android:textColor="#00796b"
+
         android:textStyle="bold"
         android:textSize="20dp"
         android:fontFamily="Roboto"
@@ -110,7 +107,7 @@
         android:layout_marginTop="8dp"
         android:fontFamily="Roboto"
         android:text="Default Currency"
-        android:textColor="#00796b"
+
         android:textStyle="bold"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
