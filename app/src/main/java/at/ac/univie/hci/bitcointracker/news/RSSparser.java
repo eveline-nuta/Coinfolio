@@ -71,10 +71,10 @@ public class RSSparser extends AsyncTask<Void,Void,Void> {
             Node channel = root.getChildNodes().item(1);
             NodeList items = channel.getChildNodes();
             for (int i = 0; i < items.getLength(); i++) {
-                Node cureentchild = items.item(i);
-                if (cureentchild.getNodeName().equalsIgnoreCase("item")) {
+                Node currentchild = items.item(i);
+                if (currentchild.getNodeName().equalsIgnoreCase("item")) {
                     TestArtikel item = new TestArtikel();
-                    NodeList itemchilds = cureentchild.getChildNodes();
+                    NodeList itemchilds = currentchild.getChildNodes();
                     for (int j = 0; j < itemchilds.getLength(); j++) {
                         Node current = itemchilds.item(j);
                         if (current.getNodeName().equalsIgnoreCase("title")) {
@@ -86,7 +86,7 @@ public class RSSparser extends AsyncTask<Void,Void,Void> {
                         } else if (current.getNodeName().equalsIgnoreCase("link")) {
                             item.setLink(current.getTextContent());
                         } else if (current.getNodeName().equalsIgnoreCase("thumbnail")) {
-                            //this will return us thumbnail url
+                            //liefert thumbnail url aus
                             String url = current.getAttributes().item(0).getTextContent();
                             item.setThumbnailUrl(url);
                         }

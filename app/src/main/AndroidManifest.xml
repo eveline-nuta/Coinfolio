@@ -21,16 +21,12 @@
         <activity android:name=".MainActivity" >
         </activity>
         <activity android:name=".SettingsActivity" >
-
         </activity>
         <activity android:name=".DrawerActivity" android:windowSoftInputMode="adjustNothing">
-
         </activity>
         <activity android:name=".news.NewsActivity">
-
         </activity>
         <activity android:name=".AlertActivity" android:windowSoftInputMode="adjustNothing">
-
         </activity>
     </application>
 

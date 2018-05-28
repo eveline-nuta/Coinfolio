@@ -16,6 +16,12 @@ import at.ac.univie.hci.bitcointracker.R;
 import at.ac.univie.hci.bitcointracker.news.NewsActivity;
 import at.ac.univie.hci.bitcointracker.portfolio.PortfolioActivity;
 
+/**
+ * AlertActivity has the role of supporting the creation of alerts for the user
+ * for different cryptocurrencies expressed in fiat currencies
+ * It is working is the alerts layout and the currency table layout
+ * author: Debora Nuta
+ */
 public class AlertActivity extends Activity
 {
     public Integer position = 0;
@@ -155,6 +161,10 @@ public class AlertActivity extends Activity
 
     private ArrayList<Map<String, String>> buildData() {
         ArrayList<Map<String, String>> list = new ArrayList<Map<String, String>>();
+        list.add(putData("BTC", "9756" + "USD"));
+        list.add(putData("ETH", "736" + " USD"));
+        list.add(putData("LTC", "178" + " USD"));
+
         return list;
     }
 
@@ -164,7 +174,7 @@ public class AlertActivity extends Activity
         item.put("purpose", purpose);
         return item;
     }
-//AICI
+    //AICI
     public void onDeleteButtonClick(View view) {
 
         View parentRow = (View) view.getParent();
