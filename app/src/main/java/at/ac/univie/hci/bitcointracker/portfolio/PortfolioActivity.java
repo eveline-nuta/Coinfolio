@@ -3,8 +3,8 @@ package at.ac.univie.hci.bitcointracker.portfolio;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
-import at.ac.univie.hci.bitcointracker.DrawerActivity;
 import at.ac.univie.hci.bitcointracker.R;
+
 
 /**
  * PortfolioActivity is extending FragmentActivity and it's goal is to distribute all 3 Fragments in our application
@@ -42,15 +42,12 @@ public class PortfolioActivity extends FragmentActivity {
                         .commit();
                 break;
             case "manage_fragment":
-//                getActionBar().setTitle("Manage Coins");
                 getSupportFragmentManager()
                         .beginTransaction()
                         .add(R.id.container_portfolio, new ManagePortfolioCoinsFragment())
-//                    .add(R.id.container_portfolio, new CoinPriceFragment())
                         .commit();
                 break;
             case "fee_fragment":
-//                getActionBar().setTitle("Fees");
                 getSupportFragmentManager()
                         .beginTransaction()
                         .add(R.id.container_portfolio, new FeesFragment())

@@ -181,8 +181,8 @@
         android:textStyle="bold" />
 
     <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             app:srcCompat="@drawable/portfolio"
             android:src="@drawable/portfolio"
             android:id="@+id/pBtn_Fee"
@@ -194,12 +194,12 @@
             android:layout_marginStart="8dp"
             app:layout_constraintBottom_toBottomOf="parent"
             android:layout_marginBottom="8dp"
-            app:layout_constraintHorizontal_bias="0.025"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintVertical_bias="1.0"/>
 
     <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             app:srcCompat="@drawable/wallet"
             android:id="@+id/wBtn_Fee"
             android:src="@drawable/wallet"
@@ -211,12 +211,12 @@
             android:layout_marginStart="8dp"
             app:layout_constraintBottom_toBottomOf="parent"
             android:layout_marginBottom="8dp"
-            app:layout_constraintHorizontal_bias="0.18"
+            app:layout_constraintHorizontal_bias="0.21"
             app:layout_constraintVertical_bias="1.0"/>
 
     <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="63dp"
+            android:layout_height="60dp"
             app:srcCompat="@drawable/transaction"
             android:id="@+id/fBtn_Fee"
             android:src="@drawable/transaction"
@@ -229,11 +229,11 @@
             app:layout_constraintBottom_toBottomOf="parent"
             android:layout_marginBottom="8dp"
             app:layout_constraintVertical_bias="1.0"
-            app:layout_constraintHorizontal_bias="0.34"/>
+            app:layout_constraintHorizontal_bias="0.41"/>
 
     <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             app:srcCompat="@drawable/news"
             android:id="@+id/nBtn_Fee"
             android:src="@drawable/news"
@@ -245,11 +245,12 @@
             android:layout_marginStart="8dp"
             app:layout_constraintBottom_toBottomOf="parent"
             android:layout_marginBottom="8dp"
-            app:layout_constraintVertical_bias="1.0"/>
+            app:layout_constraintVertical_bias="1.0"
+            app:layout_constraintHorizontal_bias="0.61"/>
 
     <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             app:srcCompat="@drawable/alerts"
             android:src="@drawable/alerts"
             android:id="@+id/aBtn_Fee"
@@ -261,12 +262,12 @@
             android:layout_marginStart="8dp"
             app:layout_constraintBottom_toBottomOf="parent"
             android:layout_marginBottom="8dp"
-            app:layout_constraintHorizontal_bias="0.66"
+            app:layout_constraintHorizontal_bias="0.8"
             app:layout_constraintVertical_bias="1.0"/>
 
     <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             app:srcCompat="@drawable/settings"
             android:id="@+id/sBtn_Fee"
             android:src="@drawable/settings"
@@ -279,6 +280,6 @@
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="8dp"
             app:layout_constraintVertical_bias="1.0"
-            app:layout_constraintHorizontal_bias="0.82"/>
+            app:layout_constraintHorizontal_bias="1.0"/>
 
 </android.support.constraint.ConstraintLayout>

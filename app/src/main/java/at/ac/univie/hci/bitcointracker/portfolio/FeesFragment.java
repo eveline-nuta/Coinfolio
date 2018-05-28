@@ -58,7 +58,6 @@ public class FeesFragment extends Fragment {
         aBtn = (ImageButton) rootView.findViewById(R.id.aBtn_Fee);
         sBtn = (ImageButton) rootView.findViewById(R.id.sBtn_Fee);
 
-
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(getContext(), android.R.layout.simple_expandable_list_item_1,
                 getResources().getStringArray(R.array.coinMarkets));
 
