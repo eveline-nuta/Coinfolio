@@ -3,8 +3,8 @@ package at.ac.univie.hci.bitcointracker.portfolio;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
+import at.ac.univie.hci.bitcointracker.DrawerActivity;
 import at.ac.univie.hci.bitcointracker.R;
-
 
 /**
  * PortfolioActivity is extending FragmentActivity and it's goal is to distribute all 3 Fragments in our application
@@ -30,12 +30,8 @@ public class PortfolioActivity extends FragmentActivity {
         }
 
         Intent intent = getIntent();
-        if(intent.hasExtra("FragmentToOpen")) {
-            String fragmentToStart = intent.getExtras().getString("FragmentToOpen");
-            switch (fragmentToStart) {
-                case "start_fragment":
+        String fragmentToStart = intent.getExtras() != null ? intent.getExtras().getString("FragmentToOpen") : "start_fragment";
 
-<<<<<<< HEAD
         switch (fragmentToStart) {
             case "start_fragment":
 
@@ -46,49 +42,22 @@ public class PortfolioActivity extends FragmentActivity {
                         .commit();
                 break;
             case "manage_fragment":
+//                getActionBar().setTitle("Manage Coins");
                 getSupportFragmentManager()
                         .beginTransaction()
                         .add(R.id.container_portfolio, new ManagePortfolioCoinsFragment())
+//                    .add(R.id.container_portfolio, new CoinPriceFragment())
                         .commit();
                 break;
             case "fee_fragment":
+//                getActionBar().setTitle("Fees");
                 getSupportFragmentManager()
                         .beginTransaction()
                         .add(R.id.container_portfolio, new FeesFragment())
                         .commit();
                 break;
-=======
-                    getSupportFragmentManager()
-                            .beginTransaction()
-                            .add(R.id.container_portfolio, new ChartPriceFragment())
-                            .add(R.id.container_portfolio, new CoinPriceFragment())
-                            .commit();
-                    break;
-                case "manage_fragment":
-//                getActionBar().setTitle("Manage Coins");
-                    getSupportFragmentManager()
-                            .beginTransaction()
-                            .add(R.id.container_portfolio, new ManagePortfolioCoinsFragment())
-//                    .add(R.id.container_portfolio, new CoinPriceFragment())
-                            .commit();
-                    break;
-                case "fee_fragment":
-//                getActionBar().setTitle("Fees");
-                    getSupportFragmentManager()
-                            .beginTransaction()
-                            .add(R.id.container_portfolio, new FeesFragment())
-                            .commit();
-                    break;
-            }
         }
-        else {
-            getSupportFragmentManager()
-                    .beginTransaction()
-                    .add(R.id.container_portfolio, new ChartPriceFragment())
-                    .add(R.id.container_portfolio, new CoinPriceFragment())
-                    .commit();
->>>>>>> 535e68927b25941df763f25474d9f978e6316a03
-        }
+
     }
 
 }
